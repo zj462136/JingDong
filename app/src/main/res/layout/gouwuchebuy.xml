@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--购物车的二级列表-->
+            <com.dash.a19_net_cart.view.custom.CartExpanableListview
+                android:id="@+id/expanable_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.dash.a19_net_cart.view.custom.CartExpanableListview>
+
+            <!--为你推荐-->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:background="#00ff00"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/relative_progress"-->
+        <!--android:layout_above="@+id/linear_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ProgressBar-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

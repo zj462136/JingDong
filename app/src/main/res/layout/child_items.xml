@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cb_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:background="@drawable/check_box_selector"/>
+    <ImageView
+        android:id="@+id/image_goods"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/cb_child"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/text_delete"
+        android:layout_toRightOf="@+id/image_goods"
+        android:maxLines="2"
+        android:minLines="2"
+        android:text="sddssdsd"/>
+    <TextView
+        android:id="@+id/text_price"
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_goods"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/image_goods"
+        android:text="sddssdsd"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_goods"
+        android:layout_toLeftOf="@+id/text_delete"
+        android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/text_jian"
+                android:layout_marginLeft="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/bian_kuang"
+                android:text="一"/>
+        <!--<TextView-->
+            <!--android:id="@+id/text_num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/bian_kuang"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:text="1" />-->
+            <TextView
+                android:id="@+id/text_num"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="1"
+                android:background="@drawable/bian_kuang"/>
+            <TextView
+                android:id="@+id/text_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十"
+                android:padding="5dp"
+                android:background="@drawable/bian_kuang"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_delete"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
